@@ -1,0 +1,61 @@
+================================================================================
+RIASSUNTO ADDESTRAMENTO YOLO MEDICO MIGLIORATO
+FOCUS: DISTINZIONE SENO/AREOLA + BILANCIAMENTO DATASET
+================================================================================
+
+Data addestramento: 2025-05-24_20-08-01
+Versione: Enhanced Medical YOLO v2.0
+
+STATISTICHE DATASET:
+----------------------------------------
+Totale oggetti annotati: 575
+Numero classi: 8
+Classi seno identificate: ['seno_destro', 'seno_sinistro']
+Classi areola identificate: ['areola_destra', 'areola_sinistra']
+
+Distribuzione oggetti per classe:
+  0: seno_destro                   86 oggetti ( 15.0%)
+  1: seno_sinistro                 87 oggetti ( 15.1%)
+  2: areola_destra                 87 oggetti ( 15.1%)
+  3: areola_sinistra               87 oggetti ( 15.1%)
+  4: giugulare_dx                  57 oggetti (  9.9%)
+  5: giugulare_sx                  57 oggetti (  9.9%)
+  6: capezzolo_dx                  57 oggetti (  9.9%)
+  7: capezzolo_sx                  57 oggetti (  9.9%)
+
+CONFIGURAZIONE ADDESTRAMENTO:
+----------------------------------------
+epochs: 300
+batch: 12
+imgsz: 832
+device: mps
+optimizer: AdamW
+lr0: 0.0008
+lrf: 0.005
+patience: 80
+box: 8.5
+cls: 0.8
+dfl: 2.0
+
+AUGMENTATIONS (conservative per anatomia):
+hsv_h: 0.008
+hsv_s: 0.4
+hsv_v: 0.3
+degrees: 5.0
+translate: 0.05
+scale: 0.3
+shear: 1.0
+flipud: 0.0
+fliplr: 0.3
+mosaic: 0.8
+
+RACCOMANDAZIONI POST-ADDESTRAMENTO:
+----------------------------------------
+1. Verifica matrice di confusione per identificare confusioni seno/areola
+2. Utilizza threshold ottimizzato per inference (vedi file JSON)
+3. Considera post-processing per filtrare detection ridondanti
+4. Monitora performance su nuovi dati medici
+5. Documenta casi edge per miglioramenti futuri
+
+STATUS: ✅ Addestramento completato con successo
+Modello ottimizzato per distinzione anatomica seno/areola

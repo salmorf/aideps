@@ -1,0 +1,33 @@
+# VS Code settings
+.vscode/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.so
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# Virtual environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Cartella con immagini da escludere (ricorsivamente)
+data/
+runs/
