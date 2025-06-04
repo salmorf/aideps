@@ -12,14 +12,30 @@ To access the demo, use the following credentials:
 Username: demo@demo.com
 Password: demo
 
+## Backend Technologies Used
 
-### Technologies Used
-Frontend Nextjs 
+- **FastAPI** – Python framework for building RESTful APIs  
+- **MongoDB** – NoSQL database for storing user and dataset information  
+- **JWT (JSON Web Token)** – Secure token-based authentication  
+- **Pandas** – Data manipulation and dataset handling  
+- **Scikit-learn** – Machine Learning library  
+- **Motor** – Asynchronous driver for MongoDB  
+- **Python-Decouple** – Environment variable management via `.env` files  
+- **Uvicorn** – ASGI server for running FastAPI applications
 
+## Frontend Technologies Used
 
+- **Next.js** – React framework for server-side rendering and full-stack capabilities  
+- **React** – JavaScript library for building user interfaces  
+- **TypeScript** – Strongly typed superset of JavaScript for safer and scalable development  
+- **Tailwind CSS** – Utility-first CSS framework for fast and responsive UI design  
+- **Turbopack** – High-performance bundler and build system for Next.js applications
 
+## Source Code
 
-
+- [Backend (FastAPI)](https://github.com/salmorf/aideps-be)
+- [Frontend (Next.js)](https://github.com/salmorf/aideps-fe)
+- [Feature Based Model](https://github.com/VCJx07/CatBoost-Mastopexy-Feature-Based-Model/tree/master)
 
 <!-- 
 ## 📦 Installazione
