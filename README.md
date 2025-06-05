@@ -114,25 +114,25 @@ comprehensive_report_YYYYMMDD_HHMMSS/
 
 ### Key Metrics
 ```
-- **mAP@0.5**: Mean Average Precision a soglia IoU 0.5
-- **mAP@0.5:0.95**: Mean Average Precision media su IoU 0.5-0.95
-- **Uncertainty Score**: Misura dell'incertezza dell'ensemble
-- **Diversity Score**: Diversità dei modelli nell'ensemble
-- **Calibration Score**: Calibrazione delle confidence
+- **mAP@0.5**: Mean Average Precision at IoU threshold 0.5
+- **mAP@0.5:0.95**: Mean Average Precision averaged over IoU 0.5-0.95
+- **Uncertainty Score**: Measure of the uncertainty of the ensemble
+- **Diversity Score**: Diversity of the models in the ensemble
+- **Calibration Score**: Calibration of the confidences
 ```
 
 ### Technical Limitations
 ```
-- **Memory intensive**: Ensemble richiede molta GPU memory
-- **Training time**: Processo completo può richiedere molte ore
-- **Dependencies**: Molte dipendenze per funzionalità complete
+- **Memory intensive**: Ensemble requires a lot of GPU memory
+- **Training time**: Full process can take many hours
+- **Dependencies**: Many dependencies for full functionality
 ```
 
 ### Medical Considerations
-- ⚠️ **NON per uso diagnostico diretto** senza validazione clinica
-- ⚠️ **Sempre validare** con professionisti medici qualificati
-- ⚠️ **Compliance normativa** responsabilità dell'utente finale
+- ⚠️ **NOT for direct diagnostic use** without clinical validation
+- ⚠️ **Always validate** with qualified medical professionals
+- ⚠️ **Regulatory compliance** end user responsibility
 
-## 📄 Licenza
+## 📄 License
 
 Distribuito sotto licenza MIT. Vedi `LICENSE` per maggiori informazioni.
